@@ -1,0 +1,62 @@
+\documentclass[12p]{article}
+\usepackage[margin=1in, headheight=110pt]{geometry}
+\usepackage{amssymb, amsmath, amsfonts, amsthm}
+\usepackage{mathpazo}
+\usepackage{setspace}
+% \usepackage{probsoln}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{caption}
+\usepackage{bookmark}
+
+\captionsetup{labelformat=empty}
+% \usepackage{parskip} % Use for extra line spacing
+\def\ojoin{\setbox0=\hbox{$\bowtie$}%
+  \rule[-.02ex]{.25em}{.4pt}\llap{\rule[\ht0]{.25em}{.4pt}}}
+\def\leftouterjoin{\mathbin{\ojoin\mkern-5.8mu\bowtie}}
+\def\rightouterjoin{\mathbin{\bowtie\mkern-5.8mu\ojoin}}
+\def\fullouterjoin{\mathbin{\ojoin\mkern-5.8mu\bowtie\mkern-5.8mu\ojoin}}
+
+\pagestyle{fancy}
+\lhead{Evan Quan - 10154242}
+\rhead{CPSC 471 - Assignment 6 - T04 - Fall 2017}
+\title{Get Familiar with Database Design}
+\date{\vspace{-12ex}}
+
+\newcommand{\sep}{\;}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{prop}[theorem]{Proposition}
+\newtheorem{cor}[theorem]{Corollary}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newcounter{problem}
+\newcounter{exercise}
+\newcounter{solution}
+\newcounter{question}
+
+
+\newcommand{\question}[3]{%
+\textbf{Question #1}: #2
+
+\textbf{Answer:} #3
+\vspace{6pt}
+}
+
+\setlength{\parindent}{0pt}
+\begin{document}
+\maketitle
+\thispagestyle{fancy}
+
+\onehalfspacing
+
+\begin{center}
+  \textit{December 6, 2017}
+\end{center}
+
+\end{document}
