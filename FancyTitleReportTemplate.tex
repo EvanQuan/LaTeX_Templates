@@ -1,0 +1,141 @@
+\documentclass[12p]{article}
+% \documentclass{seg thigy}
+% bibliographystyle{seg asdf}
+% \tiny\bibligoraphy{seq_eg} .bib file
+% \usepackage[margin=1in, headheight=110pt]{geometry}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amssymb, amsmath, amsfonts, amsthm}
+\usepackage{mathpazo}
+\usepackage{setspace}
+% \usepackage{probsoln}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{enumitem}
+\usepackage{listings}
+% \usepackage{lipsum}
+% \usepackage{parskip} % Use for extra line spacing
+
+\pagestyle{fancy}
+\lhead{Evan Quan - 10154242}
+\rhead{GOPH 549 - Summer 2017}
+\newenvironment{hangingpar}[1]
+  {\begin{list}
+          {}
+          {\setlength{\itemindent}{-#1}%%'
+           \setlength{\leftmargin}{#1}%%'
+           \setlength{\itemsep}{0pt}%%'
+           \setlength{\parsep}{\parskip}%%'
+           \setlength{\topsep}{\parskip}%%'
+           }
+    \setlength{\parindent}{-#1}%%
+    \item[]
+  }
+  {\end{list}}
+
+\newcommand{\sep}{\;}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{prop}[theorem]{Proposition}
+\newtheorem{cor}[theorem]{Corollary}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newcounter{problem}
+\newcounter{exercise}
+\newcounter{solution}
+\newcounter{question}
+
+\newcommand\floor[1]{\lfloor#1\rfloor}
+\newcommand\ceil[1]{\lceil#1\rceil}
+
+\newcommand\Exercise{%
+  \stepcounter{exercise}%
+  \textbf{Exercise \theexercise}~%
+  \setcounter{solution}{0}%
+}
+
+\newcommand\Problem{%
+  \stepcounter{problem}%
+  \textbf{Problem \theproblem}~%
+  \setcounter{solution}{0}%
+}
+
+\newcommand\Question{%
+  \stepcounter{question}%
+  \textbf{Question \thequestion}~%
+  \setcounter{solution}{0}%
+}
+
+\newcommand\ChallengeProblem{%
+  \stepcounter{problem}%
+  \textbf{Exercise~\theproblem $^{*}$ }~%
+  \setcounter{solution}{0}%
+}
+\newcommand\TheSolution{%
+  \textbf{Solution.}~
+}
+\begin{document}
+% \begin{titlepage}
+%     \begin{center}
+%         \vspace*{1cm}
+%
+%         \textsc{\Large Wenner, Dipole-Dipole, and Seismic Joint Inversion}
+%         \vspace{0.3cm}
+%
+%         \vspace{2cm}
+%
+%         {Evan Quan}
+%
+%         \vspace{2cm}
+%         Date of submission: September 29, 2017
+%     \end{center}
+% \end{titlepage}
+\begin{titlepage}
+  \begin{center}
+    \vspace*{1cm}
+    \Large{\textbf{University of Calgary}}\\
+    \Large{\textbf{GOPH 549 - Field School}\\
+    \vfill
+    \line(1,0){400}\\[1mm]
+    \huge{\textbf{Wenner, Dipole-Dipole,\\
+    and Seismic Joint Inversion}}\\
+    % \Large{\textbf{A Study on Forward-Modelling and Inversion}}\\
+    \line(1,0){400}\\
+    \vfill
+    Evan Quan\\
+    ID: 10154242\\
+    September 29, 2017
+    % \today \\
+  \end{center}
+\end{titlepage}
+% \thispagestyle{fancy}
+\setcounter{page}{0}
+\tableofcontents
+\pagenumbering{gobble}
+\break
+\pagenumbering{arabic}
+% \onehalfspacing
+
+\section{Section 1}
+
+
+\section{References}
+\begin{hangingpar}{2em}
+  Bigiarini, Mauricio Zambrano, 2017, Normalized Root Mean Square Error.\\
+  https://www.rforge.net/doc/packages/hydroGOF/nrmse.html, accessed 19 September 2017.
+
+  Holmes, Susan, 2000, RMS Error.\\
+  http://statweb.stanford.edu/~susan/courses/s60/split/node60.html, accessed 19 September 2017.
+
+  Inanen, Kris. Refraction methods. Class lecture, University of Calgary, Calgary, Canada, February 2016.
+
+  Laurer, Rachel. Introduction to Electrical Resistivity: Wenner Array. Class lab, University of Calgary, Calgary, Canada, 2016.
+
+  Laurer, Rachel. Resistivity. Class lecture, University of Calgary, Calgary, Canada, March 2017.
+
+  Telford, William Murray, L.P. Geldart, R.E. Sheriff, 1990, Applied Geophysics, Second Edition: Cambridge University Press.
+\end{hangingpar}
+% ERT multilayer equation Telford???
+\end{document}
